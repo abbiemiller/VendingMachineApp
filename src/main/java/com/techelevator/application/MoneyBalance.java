@@ -4,5 +4,48 @@ package com.techelevator.application;
 //look to polymorph exercise for balance clues
 //coin denomination returns
 
-public class MoneyBalance {
+import java.util.Scanner;
+
+public class MoneyBalance implements Change{
+
+
+    private String customer;
+    private int balance;
+
+    public MoneyBalance(String customer, int balance) {
+        this.customer = customer;
+        this.balance = balance;
+        this.balance = 0;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+
+    public int moneyFed(int moneyFed) {
+        balance = balance + moneyFed;
+        return balance;
+    }
+
+    public int getSnackCost(int snackCost) {
+        balance = balance - snackCost;
+        return balance;
+    }
+
+    public int transferTo(MoneyBalance destinationAccount, int snackCost) {
+        int newBalance = this.getBalance() - snackCost;
+
+        if (newBalance < 0) {
+            return this.getBalance();
+        } else {
+            this.getSnackCost(snackCost);
+            destinationAccount.moneyFed(snackCost);
+        }
+        return this.balance;
+    }
 }
+
+
+}
+

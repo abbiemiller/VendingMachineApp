@@ -26,6 +26,11 @@ public class VendingMachine{
             }
             else if(choice.equals("purchase")) {
                 // make a purchase
+            userInput.getPurchaseMenuOption();
+
+
+
+
             }
             else if(choice.equals("exit")) {
                 // good bye

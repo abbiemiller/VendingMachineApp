@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SelectItem {
-    private String name;
-    private BigDecimal price;
+    private  String name;
+    private  BigDecimal price;
 public String type;
 
     public SelectItem(String name, BigDecimal price, String type) {
