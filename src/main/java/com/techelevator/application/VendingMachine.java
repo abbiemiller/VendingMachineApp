@@ -5,22 +5,22 @@ import com.techelevator.ui.UserOutput;
 
 import java.io.FileNotFoundException;
 
-public class VendingMachine extends Display{
+public class VendingMachine{
     UserInput userInput = new UserInput();
     UserOutput userOutput = new UserOutput();
 
-    public String run() {
+    public void run() {
         while(true) {
             userOutput.displayHomeScreen();
             String choice = userInput.getHomeScreenOption();
 
             System.out.println(choice);
             if(choice.equals("display")) {
-                try {
-                    return getDisplayScreen();
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }
+               Display display = new Display();
+                display.getDisplayScreen();
+
+                //TODO try catch needs to be in Display method
+
 
                 // display the items
             }
@@ -32,6 +32,6 @@ public class VendingMachine extends Display{
                 break;
             }
         }
-        return null;
+
     }
 }
