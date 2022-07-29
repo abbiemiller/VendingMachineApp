@@ -6,19 +6,19 @@ package com.techelevator.application;
 
 import java.util.Scanner;
 
-public class MoneyBalance implements Change{
+public class MoneyBalance{
 
 
     private String customer;
     private int balance;
 
-    public MoneyBalance(String customer, int balance) {
-        this.customer = customer;
+    public MoneyBalance() {
         this.balance = balance;
         this.balance = 0;
     }
 
     public int getBalance() {
+
         return balance;
     }
 
@@ -47,5 +47,5 @@ public class MoneyBalance implements Change{
 }
 
 
-}
+
 

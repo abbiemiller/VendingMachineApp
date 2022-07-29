@@ -19,7 +19,7 @@ public class VendingMachine{
                Display display = new Display();
                 display.getDisplayScreen();
 
-                //TODO try catch needs to be in Display method
+
 
 
                 // display the items

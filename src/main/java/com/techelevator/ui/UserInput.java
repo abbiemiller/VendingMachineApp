@@ -1,5 +1,7 @@
 package com.techelevator.ui;
 
+import com.techelevator.application.MoneyBalance;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -9,6 +11,7 @@ import java.util.Scanner;
  * Dependencies: None
  */
 public class UserInput {
+    MoneyBalance money = new MoneyBalance();
     private Scanner scanner = new Scanner(System.in);
 
     public String getHomeScreenOption() {
@@ -64,7 +67,7 @@ public class UserInput {
 
     }
 
-    public String FeedMoneyOption() {
+    public int getFeedMoneyOption() {
         System.out.println("What amounts would you like to insert?");
         System.out.println();
 
@@ -81,14 +84,15 @@ public class UserInput {
         String option = selectedOption.trim().toLowerCase();
         System.out.println("option = " + option);
         if (option.equals("1")) {
-            return getBalance + 1;
+
+           return money.getBalance();
         } else if (option.equals("5")) {
-            return getBalance + 1;
+          return money.getBalance();
         } else if (option.equals("10")) {
-            return getBalance + 5;
+            return money.getBalance();
         } else if (option.equals("20")) {
-            return getBalance + 20;
+            return money.getBalance();
         }
-return null;
+        return money.getBalance();
     }
 }
