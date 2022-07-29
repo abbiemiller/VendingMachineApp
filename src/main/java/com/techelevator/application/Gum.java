@@ -7,8 +7,8 @@ import java.math.BigDecimal;
 public class Gum extends SelectItem{
     private String message = "Chewy, Chewy, lots o bubbles";
 
-    public Gum(String name, BigDecimal price) {
-        super(name, price);
+    public Gum(String name, BigDecimal price, String type) {
+        super(name, price, type);
     }
 
 
