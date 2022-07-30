@@ -10,31 +10,27 @@ public class MoneyBalance{
 
 
     private String customer;
-    private int balance;
+    private double balance = 5.0;
 
-    public MoneyBalance() {
-        this.balance = balance;
-        this.balance = 0;
-    }
-
-    public int getBalance() {
+ //This is our main balance
+    public double getBalance() {
 
         return balance;
     }
 
 
-    public int moneyFed(int moneyFed) {
+    public double moneyFed(double moneyFed) {
         balance = balance + moneyFed;
         return balance;
     }
 
-    public int getSnackCost(int snackCost) {
+    public double getSnackCost(double snackCost) {
         balance = balance - snackCost;
         return balance;
     }
 
-    public int transferTo(MoneyBalance destinationAccount, int snackCost) {
-        int newBalance = this.getBalance() - snackCost;
+    public double transferTo(MoneyBalance destinationAccount, double snackCost) {
+        double newBalance = this.getBalance() - snackCost;
 
         if (newBalance < 0) {
             return this.getBalance();

@@ -60,17 +60,17 @@ public class UserInput {
         if (option.equals("m")) {
             return "feed money";
         } else if (option.equals("i")) {
-            display.getDisplayScreen();
-            System.out.println();
-            System.out.println("Enter letter and number to dispense item!");
+            display.getSelectionScreen();
+            //System.out.println();
+           // System.out.println("Enter letter and number to dispense item!");
         } else if (option.equals("x")) {
             return "finish";
         } else {
             return "";
         }
-        Scanner userInput = new Scanner(System.in);
-        String savedInput = userInput.nextLine();
-
+//        Scanner userInput = new Scanner(System.in);
+//        String savedInput = userInput.nextLine();
+//        display.getSelectedItemPrice(savedInput);
         return null;
 
     }
