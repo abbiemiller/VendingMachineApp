@@ -29,8 +29,6 @@ public class VendingMachine{
             userInput.getPurchaseMenuOption();
 
 
-
-
             }
             else if(choice.equals("exit")) {
                 // good bye

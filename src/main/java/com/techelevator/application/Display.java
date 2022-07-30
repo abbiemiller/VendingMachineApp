@@ -1,5 +1,7 @@
 package com.techelevator.application;
 
+import com.techelevator.ui.UserInput;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.math.BigDecimal;
@@ -10,6 +12,34 @@ import java.util.Scanner;
 //show the user all vending machine options/items with remaining quantity (using the catering.csv)
 public class Display {
 
+    UserInput userInput= new UserInput();
+
+
+    Map<String, SelectItem> selectedItems = new HashMap<>();
+    Double selectedItemPrice = selectedItems.get.getPrice();
+    String selectedItemName = selectedItems.get().getName();
+    String selectedItemType = selectedItems.get("A1").getType();
+
+//
+//
+//    public double getSelectedItemPrice(){
+//        return selectedItemPrice;
+//    }
+//
+//    public String getSelectedItemName(){
+//        return selectedItemName;
+//    }
+//
+//    public String getSelectedItemType (){
+//        return selectedItemType;
+//    }
+
+
+
+
+
+
+
     public String getDisplayScreen(){
 
         String path = "C:\\\\Users\\\\Student\\\\workspace\\\\module-1-capstone-group-3\\\\catering.csv";
@@ -19,7 +49,8 @@ public class Display {
         File catering2 = new File(path2);
 
 
-        Map<String, SelectItem> selectedItems = new HashMap<>();
+
+         Map<String, SelectItem> selectedItems = new HashMap<>();
         //TODO create item counter within SelectItem
 
         try (Scanner scanner = new Scanner(catering)){

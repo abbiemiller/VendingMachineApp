@@ -7,23 +7,26 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SelectItem {
-    private  String name;
-    private  BigDecimal price;
+    private String name;
+    private BigDecimal price;
     public String type;
+    public int quanity = 6;
+
 
     public SelectItem(String name, BigDecimal price, String type) {
         this.name = name;
         this.price = price;
-        this.type=type;
+        this.type = type;
     }
 
-    public double getPrice() {
-        return price.doubleValue();
-    }
+    public double getPrice()
+    {return price.doubleValue();}
 
-    //    Map<String, String> vendingMachineItems = new HashMap<String, String>();
-//    vendingMachineItems.put(("A1", "U-Chews"));
-//    vendingMachineItems.put("A2", "Ginger Ayle");
+    public String getName() {
+        return name;
+    }
+        public String getType(){
+        return type;
+        }
 
 }
-

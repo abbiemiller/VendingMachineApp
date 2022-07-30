@@ -6,4 +6,8 @@ package com.techelevator.application;
 //May use this for the Sales Report
 
 public class AuditReport {
+
+
+
+
 }
