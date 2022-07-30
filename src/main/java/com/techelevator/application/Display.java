@@ -107,7 +107,7 @@ public class Display {
             //  Double selectedItemPrice = selectedItems.get(savedInput).getPrice();
             //  String selectedItemName = selectedItems.get(savedInput).getName();
             //  String selectedItemType = selectedItems.get(savedInput).getType();
-            
+
         }
         System.out.println("=======Selection Time!!!!=======");
         System.out.println("Enter letter and number to dispense item!");
