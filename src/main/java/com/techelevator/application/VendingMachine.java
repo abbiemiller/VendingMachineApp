@@ -16,8 +16,8 @@ public class VendingMachine{
 
             System.out.println(choice);
             if(choice.equals("display")) {
-               Display display = new Display();
-                display.getDisplayScreen();
+                Display display = new Display();
+                display.getDisplayScreenReader();
 
 
 

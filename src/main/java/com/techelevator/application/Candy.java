@@ -8,8 +8,8 @@ public class Candy extends SelectItem {
 
     private String message = "Sugar, sugar, so sweet!";
 
-    public Candy(String name, BigDecimal price, String type) {
-        super(name, price, type);
+    public Candy(String name, BigDecimal price, String type, BigDecimal quantity) {
+        super(name, price, type, quantity);
     }
         public String getMessage() {
             return message;

@@ -7,26 +7,34 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SelectItem {
+    public BigDecimal quantity = BigDecimal.valueOf(6.0);
     private String name;
     private BigDecimal price;
     public String type;
-    public int quanity = 6;
 
 
-    public SelectItem(String name, BigDecimal price, String type) {
+
+    public SelectItem(String name, BigDecimal price, String type, BigDecimal quantity) {
         this.name = name;
         this.price = price;
         this.type = type;
+        this.quantity = quantity;
     }
 
     public double getPrice()
     {return price.doubleValue();}
 
     public String getName() {
-        return name;
+
+        return this.name;
     }
-        public String getType(){
-        return type;
+    public String getType(){
+
+        return this.type;
         }
+    public double getQuantity(){
+
+        return quantity.doubleValue();
+    }
 
 }

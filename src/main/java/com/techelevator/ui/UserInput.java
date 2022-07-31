@@ -44,6 +44,7 @@ public class UserInput {
 
     }
 
+
     public String getPurchaseMenuOption() {
         System.out.println("What would you like to do?");
         System.out.println();
@@ -58,11 +59,11 @@ public class UserInput {
         String selectedOption = scanner.nextLine();
         String option = selectedOption.trim().toLowerCase();
         if (option.equals("m")) {
-            return "feed money";
+            display.getFeedMoneyScreen();
+
         } else if (option.equals("i")) {
             display.getSelectionScreen();
-            //System.out.println();
-           // System.out.println("Enter letter and number to dispense item!");
+
         } else if (option.equals("x")) {
             return "finish";
         } else {

@@ -10,18 +10,18 @@ public class MoneyBalance{
 
 
     private String customer;
-    private double balance = 5.0;
+    private double balance = 0.0;
 
  //This is our main balance
     public double getBalance() {
 
-        return balance;
+        return this.balance;
     }
 
 
-    public double moneyFed(double moneyFed) {
-        balance = balance + moneyFed;
-        return balance;
+    public void moneyFed(double moneyFed) {
+        this.balance = this.balance + moneyFed;
+
     }
 
     public double getSnackCost(double snackCost) {

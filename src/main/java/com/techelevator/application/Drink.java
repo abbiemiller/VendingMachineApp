@@ -7,8 +7,8 @@ public class Drink extends SelectItem {
 
     private String message = "Drinky, drinky, slurp, slurp!";
 
-    public Drink(String name, BigDecimal price, String type) {
-        super(name, price, type);
+    public Drink(String name, BigDecimal price, String type, BigDecimal quantity) {
+        super(name, price, type, quantity);
 
     }
 

@@ -7,8 +7,8 @@ public class Munchies extends SelectItem {
 
     private String message = "Munchy, munchy, so good!";
 
-    public Munchies(String name, BigDecimal price, String type) {
-        super(name, price, type);
+    public Munchies(String name, BigDecimal price, String type, BigDecimal quantity) {
+        super(name, price, type,quantity);
     }
     public String getMessage() {
         return message;
