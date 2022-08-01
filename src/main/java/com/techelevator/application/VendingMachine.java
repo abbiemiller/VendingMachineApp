@@ -16,22 +16,15 @@ public class VendingMachine{
 
             System.out.println(choice);
             if(choice.equals("display")) {
-                Display display = new Display();
-                display.getDisplayScreenReader();
 
-
-
-
-                // display the items
             }
             else if(choice.equals("purchase")) {
-                // make a purchase
-            userInput.getPurchaseMenuOption();
 
+            userInput.getPurchaseMenuOption();
 
             }
             else if(choice.equals("exit")) {
-                // good bye
+
                 break;
             }
         }

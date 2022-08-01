@@ -1,5 +1,5 @@
 package com.techelevator.application;
-// name, price, extends selectItem; return chewy, chewy, lots o bubbles!
+
 
 
 import java.math.BigDecimal;

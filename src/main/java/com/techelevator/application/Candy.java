@@ -1,5 +1,5 @@
 package com.techelevator.application;
-//subclass of SelectItem and also shows name of item, price; returns sugar, sugar, so sweet!
+
 
 
 import java.math.BigDecimal;

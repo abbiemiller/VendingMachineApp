@@ -5,8 +5,13 @@ package com.techelevator.application;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class SelectItem {
+
+    Display selectItemDisplay = new Display();
+
+
     public BigDecimal quantity = BigDecimal.valueOf(6.0);
     private String name;
     private BigDecimal price;
@@ -32,9 +37,11 @@ public class SelectItem {
 
         return this.type;
         }
-    public double getQuantity(){
+    public BigDecimal getQuantity(){
 
-        return quantity.doubleValue();
+        return quantity;
     }
+
+
 
 }
