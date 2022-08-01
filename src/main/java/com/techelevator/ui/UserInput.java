@@ -42,7 +42,7 @@ public class UserInput {
         } else if (option.equals("e")) {
             return "exit";
         } else {
-            return "";
+            return "Invalid Selection. Please try again.";
         }
 
 
@@ -52,8 +52,9 @@ public class UserInput {
         System.out.println();
 
         System.out.println("M) Feed Money");
-        System.out.println("I) Select Item");
+        System.out.println("I) Inventory Selection");
         System.out.println("X) Finish");
+        System.out.println("Current Money Provided: $" + userInventory.balance);
 
         System.out.println();
         System.out.print("Please select an option: ");
@@ -68,12 +69,14 @@ public class UserInput {
 
 
         } else if (option.equals("x")) {
+           userInventory.getFinishBalance();
+
             return "finish";
         } else {
-            return "";
+            return "Invalid Selection. Please try again.";
         }
 
-        return null;
+        return "Invalid Selection. Please try again.";
 
     }
 }
