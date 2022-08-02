@@ -53,7 +53,23 @@ public class AuditReport {
 
     }
 
+    public void updateLogChangeGiven(BigDecimal balance) {
 
+        File file = new File("Audit.txt");
+        try {
+            FileOutputStream audit = new FileOutputStream(file, true);
+            System.out.println();
+            PrintWriter writer = new PrintWriter(audit);
+            DateTimeFormatter myDateAndTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm:ss a");
+            String formattedDateAndTime = timeOfTransaction.now().format(myDateAndTimeFormatter);
+            writer.printf(formattedDateAndTime + " " + ": " + "Change Given " + balance + " "  + "\n");
+            writer.close();
+        } catch (FileNotFoundException audit) {
+            System.out.println("Log was not written, try again!");
+        }
+        System.out.println();
+
+    }
     }
 
 

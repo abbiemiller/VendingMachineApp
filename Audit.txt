@@ -17,3 +17,86 @@
 08/01/2022 01:43:21 AM : Money Fed $20 $20.0
 08/01/2022 01:43:28 AM : Moonpie Candy null 17.05 14.10
 08/01/2022 01:43:28 AM : Moonpie Candy null 17.05 14.10
+08/01/2022 08:14:10 PM : Money Fed $20 $20.0
+08/01/2022 08:14:20 PM : Snykkers Candy null 15.75 11.50
+08/01/2022 08:14:20 PM : Snykkers Candy null 15.75 11.50
+08/01/2022 08:15:44 PM : Money Fed $10 $10.0
+08/01/2022 08:15:53 PM : Chippos Munchy null 6.15 2.30
+08/01/2022 08:15:53 PM : Chippos Munchy null 6.15 2.30
+08/01/2022 08:23:09 PM : Money Fed $5 $5.0
+08/01/2022 08:23:20 PM : Chippos Munchy null 1.15 -2.70
+08/01/2022 08:23:20 PM : Chippos Munchy null 1.15 -2.70
+08/01/2022 08:29:18 PM : Money Fed $10 $10.0
+08/01/2022 08:29:27 PM : Chippos Munchy null 6.15 2.30
+08/01/2022 08:29:27 PM : Chippos Munchy null 6.15 2.30
+08/01/2022 08:53:20 PM : Money Fed $5 $5.0
+08/01/2022 08:58:06 PM : Money Fed $1 $1.0
+08/01/2022 09:34:39 PM : Money Fed $1 $1.0
+08/01/2022 09:34:52 PM : Money Fed $20 $21.0
+08/01/2022 09:36:43 PM : Chippos Munchy null 17.15 13.30
+08/01/2022 09:36:43 PM : Chippos Munchy null 17.15 13.30
+08/01/2022 09:54:24 PM : Money Fed $1 $1.0
+08/01/2022 09:59:21 PM : Money Fed $5 $5.0
+08/01/2022 10:07:08 PM : Money Fed $10 $10.0
+08/01/2022 10:07:14 PM : Chippos Munchy null 6.15 2.30
+08/01/2022 10:07:14 PM : Chippos Munchy null 6.15 2.30
+08/01/2022 10:09:49 PM : Money Fed $5 $5.0
+08/01/2022 10:10:51 PM : Money Fed $5 $5.0
+08/01/2022 10:15:09 PM : Money Fed $10 $15.0
+08/01/2022 10:16:30 PM : Money Fed $5 $5.0
+08/01/2022 10:17:22 PM : Money Fed $5 $5.0
+08/01/2022 10:17:32 PM : Money Fed $10 $15.0
+08/01/2022 10:17:44 PM : Chippos Munchy null 11.15 7.30
+08/01/2022 10:17:44 PM : Chippos Munchy null 11.15 7.30
+08/01/2022 10:21:48 PM : Chippos Munchy null -3.85 -7.70
+08/01/2022 10:21:48 PM : Chippos Munchy null -3.85 -7.70
+08/01/2022 10:30:34 PM : Money Fed $0 $1.0
+08/01/2022 10:32:12 PM : Money Fed $0 $0.0
+08/01/2022 10:32:29 PM : Money Fed $20 $20.0
+08/01/2022 10:34:29 PM : Money Fed $20 $20.0
+08/01/2022 10:34:59 PM : Chippos Munchy null 16.15 12.30
+08/01/2022 10:34:59 PM : Chippos Munchy null 16.15 12.30
+08/01/2022 10:49:42 PM : Money Fed $5 $5.0
+08/01/2022 10:49:48 PM : Money Fed $20 $25.0
+08/01/2022 10:49:54 PM : Ginger Ayle Drink null 23.15 21.30
+08/01/2022 10:49:54 PM : Ginger Ayle Drink null 23.15 21.30
+08/01/2022 11:04:10 PM : Money Fed $20 $20.0
+08/01/2022 11:04:18 PM : Chippos Munchy null 16.15 12.30
+08/01/2022 11:04:18 PM : Chippos Munchy null 16.15 12.30
+08/01/2022 11:14:56 PM : Money Fed $5 $5.0
+08/01/2022 11:15:07 PM : Money Fed $10 $15.0
+08/01/2022 11:15:14 PM : Wonka Bar Candy null 12.65 10.30
+08/01/2022 11:15:14 PM : Wonka Bar Candy null 12.65 10.30
+08/01/2022 11:18:04 PM : Money Fed $10 $10.0
+08/01/2022 11:18:09 PM : Popcorn Munchy null 8.25 6.50
+08/01/2022 11:18:09 PM : Popcorn Munchy null 8.25 6.50
+08/01/2022 11:18:20 PM : Wonka Bar Candy null 5.90 3.55
+08/01/2022 11:18:20 PM : Wonka Bar Candy null 5.90 3.55
+08/01/2022 11:19:45 PM : Money Fed $5 $5.0
+08/01/2022 11:19:51 PM : Money Fed $10 $15.0
+08/01/2022 11:19:59 PM : Popcorn Munchy null 13.25 11.50
+08/01/2022 11:19:59 PM : Popcorn Munchy null 13.25 11.50
+08/01/2022 11:20:09 PM : Mountain Melter Drink null 9.70 6.15
+08/01/2022 11:20:09 PM : Mountain Melter Drink null 9.70 6.15
+08/01/2022 11:28:35 PM : Money Fed $5 $5.0
+08/01/2022 11:28:35 PM : Chippos Munchy null 1.15 -2.70
+08/01/2022 11:28:35 PM : Chippos Munchy null 1.15 -2.70
+08/01/2022 11:29:11 PM : Money Fed $5 $6.15
+08/01/2022 11:29:11 PM : Ginger Ayle Drink null 4.30 2.45
+08/01/2022 11:29:11 PM : Ginger Ayle Drink null 4.30 2.45
+08/01/2022 11:35:36 PM : Money Fed $10 $10.0
+08/01/2022 11:35:53 PM : Moonpie Candy null 7.05 4.10
+08/01/2022 11:35:53 PM : Moonpie Candy null 7.05 4.10
+08/01/2022 11:40:19 PM : Money Fed $10 $10.0
+08/01/2022 11:40:28 PM : Mountain Melter Drink null 6.45 2.90
+08/01/2022 11:40:28 PM : Mountain Melter Drink null 6.45 2.90
+08/01/2022 11:52:09 PM : Money Fed $10 $10.0
+08/02/2022 12:05:03 AM : Money Fed $10 $10.0
+08/02/2022 12:05:40 AM : Teaberry Gum null 8.35 6.70
+08/02/2022 12:05:40 AM : Teaberry Gum null 8.35 6.70
+08/02/2022 12:06:09 AM : Change Given 8.35 
+08/02/2022 12:14:17 AM : Money Fed $5 $5.0
+08/02/2022 12:14:44 AM : Money Fed $1 $6.0
+08/02/2022 12:15:54 AM : Papsi Drink null 2.55 -0.90
+08/02/2022 12:15:54 AM : Papsi Drink null 2.55 -0.90
+08/02/2022 12:16:14 AM : Change Given 2.55 

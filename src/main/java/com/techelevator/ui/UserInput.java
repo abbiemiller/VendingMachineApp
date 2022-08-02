@@ -40,6 +40,7 @@ public class UserInput {
         } else if (option.equals("p")) {
             return "purchase";
         } else if (option.equals("e")) {
+            getHomeScreenOption();
             return "exit";
         } else {
             return "Invalid Selection. Please try again.";
@@ -47,7 +48,9 @@ public class UserInput {
 
 
     }
+
     public String getPurchaseMenuOption() {
+        //need some kind of while loop
         System.out.println("What would you like to do?");
         System.out.println();
 
@@ -61,24 +64,24 @@ public class UserInput {
 
         String selectedOption = scanner.nextLine();
         String option = selectedOption.trim().toLowerCase();
+
         if (option.equals("m")) {
             userInventory.getFeedMoneyScreen();
 
         } else if (option.equals("i")) {
             userInventory.getSelectionScreen();
-
-
-        } else if (option.equals("x")) {
-           userInventory.getFinishBalance();
-
-            return "finish";
-        } else {
-            return "Invalid Selection. Please try again.";
         }
 
-        return "Invalid Selection. Please try again.";
+        else if (option.equals("x")) {
 
+            userInventory.getFinishBalance();
+            getHomeScreenOption();
+        }
+
+        return null;
     }
 }
+
+
 
 

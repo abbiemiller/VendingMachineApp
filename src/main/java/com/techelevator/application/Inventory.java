@@ -1,5 +1,7 @@
 package com.techelevator.application;
 
+import com.techelevator.ui.UserInput;
+
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,6 +11,7 @@ public class Inventory {
     Map<String, SelectItem> inventoryMap = new HashMap<>();
     Display inventoryDisplay = new Display();
     MoneyBalance inventoryMoney = new MoneyBalance();
+    //UserInput userInputReturn = new UserInput();
     AuditReport newReport = new AuditReport();
     public BigDecimal balance = BigDecimal.valueOf(0.0);
 
@@ -23,7 +26,7 @@ public class Inventory {
     }
 
 
-    public BigDecimal getSelectionScreen() {
+    public void getSelectionScreen() {
 
 
         System.out.println(inventoryDisplay.getSelectedItemsMap());
@@ -43,12 +46,13 @@ public class Inventory {
 //        }
         if (price.compareTo(getBalance()) > 0) {
             System.out.println("Insufficient Funds.");
-            return balance;
+            System.out.println("Balance: " + balance);
+            getFeedMoneyScreen();
         }
         BigDecimal newSelectedItemQt = inventoryMap.get(savedInput).getQuantity();
         if (newSelectedItemQt.equals(BigDecimal.ZERO)) {
             System.out.println("ITEM " + inventoryMap.get(savedInput).getName() + " is OUT OF STOCK");
-            return balance;
+            System.out.println("Balance: " + balance);
         }
         BigDecimal bdQuantityLess1 = new BigDecimal(1);
         BigDecimal newSelectedItemQt2 = newSelectedItemQt.subtract(bdQuantityLess1);
@@ -77,8 +81,8 @@ public class Inventory {
         }
         newReport.updateLogSelectedItems(inventoryMap.get(savedInput).getName(), inventoryMap.get(savedInput).getType(),
                 inventoryMap.get(userInput), balance, balance.subtract(price));
-        return balance.subtract(price);
 
+        System.out.println("Balance: $" + balance);
     }
 
 
@@ -87,25 +91,39 @@ public class Inventory {
         return this.balance;
     }
 
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+
     public void moneyFed(BigDecimal moneyFed) {
         this.balance = this.balance.add(moneyFed);
 
     }
 
-    public String getFinishBalance() {
-        int dollars = 0;
-        int quarters = 0;
-        int nickles = 0;
-        int dimes = 0;
-        BigDecimal change = balance;
-        BigDecimal remainder1 = change.remainder(BigDecimal.valueOf(3));
+    public void getFinishBalance() {
 
+        BigDecimal dollars = this.balance.divideToIntegralValue(BigDecimal.ONE);
+        BigDecimal remainder1 = this.balance.remainder(BigDecimal.ONE);
+        BigDecimal quarters = remainder1.multiply(BigDecimal.valueOf(100)).divideToIntegralValue(BigDecimal.valueOf(25));
+        BigDecimal remainder2 = remainder1.subtract(quarters.multiply(BigDecimal.valueOf(0.25)));
+        BigDecimal dimes = remainder2.multiply(BigDecimal.valueOf(100)).divideToIntegralValue(BigDecimal.valueOf(10));
+        BigDecimal remainder3 = remainder2.subtract(dimes.multiply(BigDecimal.valueOf(0.10)));
+        BigDecimal nickels;
+            if(remainder3.equals(BigDecimal.ZERO)){
+                nickels = BigDecimal.ZERO;
+            }else {
+                nickels = BigDecimal.ONE;
+            }
 
-        return "Here is your change: " + remainder1;
+        newReport.updateLogChangeGiven(balance);
+        setBalance(BigDecimal.ZERO);
+        System.out.println ("Here is your change: $" + dollars +" dollars; " + quarters+" quarters; "
+                + dimes+" dimes; " + nickels+" nickels.");
+        return;
     }
 
 
-    public String getFeedMoneyScreen() {
+    public void getFeedMoneyScreen() {
         BigDecimal add1 = BigDecimal.valueOf(1.00);
         BigDecimal add5 = BigDecimal.valueOf(5.00);
         BigDecimal add10 = BigDecimal.valueOf(10.00);
@@ -114,9 +132,10 @@ public class Inventory {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println();
-        System.out.println("What amounts would you like to insert?");
+        System.out.println("What amount would you like to insert?");
         System.out.println();
 
+        System.out.println("0) Zero-Dollars");
         System.out.println("1) One-Dollar");
         System.out.println("5) Five-Dollars");
         System.out.println("10) Ten");
@@ -129,11 +148,17 @@ public class Inventory {
         String selectedOption = scanner.nextLine();
         String option = selectedOption.trim().toLowerCase();
 
-        if (option.equals("1")) {
+        if (option.equals("0")) {
+            newReport.updateLogMoneyFed("Money Fed", BigDecimal.valueOf(0), balance);
+            System.out.println("You selected to add $" + option + " to your current balance. Your new balance is $"
+                    + getBalance() + ". Get a job.");
+
+        }else if (option.equals("1")) {
             moneyFed(add1);
             newReport.updateLogMoneyFed("Money Fed", BigDecimal.valueOf(1), balance);
             System.out.println("You selected to add $" + option + " to your current balance. Your new balance is $"
-                    + getBalance() + " Thank you.");
+                    + getBalance() + " Consider adding more.");
+
         } else if (option.equals("5")) {
             moneyFed(add5);
             newReport.updateLogMoneyFed("Money Fed", BigDecimal.valueOf(5), balance);
@@ -148,11 +173,12 @@ public class Inventory {
             moneyFed(add20);
             newReport.updateLogMoneyFed("Money Fed", BigDecimal.valueOf(20), balance);
             System.out.println("You selected to add $" + option + " to your current balance. Your new balance is $"
-                    + getBalance() + " Thank you.");
+                    + getBalance() + ". Wow! Spend it if you got it!");
         } else
             System.out.println("Invalid Selection. Please Try again.");
 
-        return "Your current balance is " + getBalance();
+        //return userInputReturn.getPurchaseMenuOption();
+        System.out.println("You are a valued consumer.");
 
     }
 

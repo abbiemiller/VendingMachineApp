@@ -24,7 +24,7 @@ public class VendingMachine{
 
             }
             else if(choice.equals("exit")) {
-
+                System.out.println("Have an excellent day");
                 break;
             }
         }
